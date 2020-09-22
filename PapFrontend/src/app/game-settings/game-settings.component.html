@@ -1,0 +1,21 @@
+<div class="windowDiv">
+    <div class="backgroundImageDiv"></div>
+
+    <div class="foregroundDiv">
+        <div class="navigationDiv">
+            <button [ngClass]="heroIsChosen ? 'heroChoice' : ''" (click)="selectDiv('hero')">Helden</button>
+            <button [ngClass]="weaponIsChosen ? 'weaponChoice' : ''" (click)="selectDiv('weapon')">Waffen</button>
+            <button [ngClass]="armorIsChosen ? 'armorChoice' : ''" (click)="selectDiv('armor')">Rüstungen</button>
+            <button [ngClass]="heroIsChosen ? 'chosenHero' : ''" (click)="selectDiv('hero')">Items</button>
+            <button [ngClass]="heroIsChosen ? 'chosenHero' : ''" (click)="selectDiv('hero')">Magie</button>
+            <button [ngClass]="heroIsChosen ? 'chosenHero' : ''" (click)="selectDiv('hero')">Orte</button>
+            <button [ngClass]="heroIsChosen ? 'chosenHero' : ''" (click)="selectDiv('hero')">Gegner</button>
+        </div>
+        <div class="contentDiv">
+            <div *ngIf="heroIsChosen" class="heroContent">
+                <h3>Hier könnt ihr eure Helden anlegen, bearbeiten und vernichten!</h3>
+            </div>
+        </div>
+    </div>
+
+</div>

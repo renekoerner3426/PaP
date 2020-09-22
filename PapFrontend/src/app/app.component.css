@@ -1,0 +1,9 @@
+div {
+    background-color: darkgreen;
+    color: white;
+    min-height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
